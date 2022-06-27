@@ -1,0 +1,146 @@
+/*  https://www.codingfactory.net/12644#_Child_Selector */
+/* @import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap'); */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+#container {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+/* 헤더 */
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #07c;
+}
+
+/* 로고 */
+#logo {
+    float: left;
+    width: 250px;
+    height: 100px;
+    line-height: 100px;
+    margin-left: 40px;
+    /* padding-left: 20px; */
+    /* background-color: indigo; */
+}
+
+#logo h1 {
+    font-family: 'Titan One', cursive;
+    font-weight:  700;
+    font-size:  25px;
+    color: #fff;
+    text-shadow: -3px -3px 1px #222;
+}
+
+
+/* 네비게이션 영역 */
+nav {
+    float: right;
+    width: 900px;
+    height: 100px;
+    /* background-color: green; */
+    padding-top: 40px;
+}
+
+#topMenu {
+    height: 60px;
+}
+
+#topMenu > li {
+    float: left;
+    position: relative;
+}
+
+#topMenu > li > a{
+    display: block;
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 0 1px #07c;
+    padding: 20px 60px;
+}
+
+#topMenu > li > a > span {
+    font-size: 1em;
+}
+
+#topMenu > li > a:hover{
+    color: #000;
+    text-shadow: 0 -1px #07c;
+}
+
+#topMenu > li > ul {
+    display: none;
+    position: absolute;
+    width: 160px;
+    background-color: rgba(161, 243, 169, 0.6);
+    left: 21px;
+    margin: 0;
+}
+
+#topMenu > li > ul > li{
+    padding: 10px 10px 10px 32px;
+}
+
+#topMenu > li > ul > li > a{
+    font-size: 14px;
+    padding: 10px;
+    color: #000;
+}
+#topMenu > li:hover > ul{
+    display: block;
+    z-index: 21;
+}
+
+#topMenu > li > ul > li > a:hover{
+    color: #f00;
+}
+/* 이미지 슬라이드 쇼 영역 */
+/* https://wa-yeong.tistory.com/27#:~:text=overflow%EB%9E%80%20CSS%20%ED%8A%B9%EC%A0%95%EC%9A%94%EC%86%8C,auto%20%EB%93%B1%EC%9D%84%20%EC%82%AC%EC%9A%A9%ED%95%9C%EB%8B%A4. */
+#slideShow {
+    clear: both;
+    width: 100%;
+    height: 300px;
+    background-color: orange;
+    overflow: hidden;
+}
+
+/* 콘텐츠 영역 */
+#contents {
+    width: 100%;
+    height: 300px;
+}
+
+/* 탭 메뉴 영역 */
+#tabMenu {
+    float: left;
+    width: 600px;
+    height: 100%;
+    background-color: violet;
+}
+
+#links {
+    float: right;
+    width: 600px;
+    height: 100%;
+    background-color: skyblue;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: gray;
+}
